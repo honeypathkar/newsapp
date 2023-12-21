@@ -1,0 +1,106 @@
+{
+  "status": "ok",
+  "totalResults": 10,
+  "articles": [
+    {
+      "source": { "id": "bbc-sport", "name": "BBC Sport" },
+      "author": null,
+      "title": "When Romania broke Welsh hearts",
+      "description": "The inside story of a defeat - and a night of real tragedy - which still haunts Welsh football, told by the people who were there",
+      "url": "http://www.bbc.co.uk/sport/extra/qzftvbnt63/when-romania-broke-welsh-hearts",
+      "urlToImage": "https://news.files.bbci.co.uk/include/extra/shorthand/assets/sport/qzftvbnt63/assets/Kh6e4DGOUh/cropgettyimages-1228950-1546x1257.jpg",
+      "publishedAt": "2023-11-17T06:52:19.944554Z",
+      "content": "Mark Evans: It was an incredible period. People were camping out on Westgate Street. Our offices were an old port office and not really fit for purpose. We had people pushing money through the letter… [+9461 chars]"
+    },
+    {
+      "source": { "id": "buzzfeed", "name": "Buzzfeed" },
+      "author": "Lauren Garafano",
+      "title": "19 Celeb Couples Who've Worked Together After Breaking Up",
+      "description": "Dwayne \"The Rock\" Johnson and Dany Garcia announced their divorce in 2007, but the two still work very closely together. She's still his manager and has produced several of the films he's starred in. They also own a minor league football team together.",
+      "url": "https://www.buzzfeed.com/laurengarafano/celeb-couples-who-worked-together-after-breaking-up",
+      "urlToImage": "https://img.buzzfeed.com/buzzfeed-static/static/2023-11/15/19/enhanced/bec7faa9104c/original-1164-1700075454-2.jpg?crop=1581:830;0,0%26downsize=1250:*",
+      "publishedAt": "2023-11-17T03:22:20.7269148Z",
+      "content": null
+    },
+    {
+      "source": { "id": "fox-sports", "name": "Fox Sports" },
+      "author": null,
+      "title": "Bengals vs. Ravens live updates: Top moments from Thursday Night Football",
+      "description": "Week 11 of the NFL kicks off with the Ravens playing host to the Bengals on Thursday Night Football in an AFC North battle!",
+      "url": "http://www.foxsports.com/stories/nfl/bengals-vs-ravens-live-updates-top-moments-from-thursday-night-football",
+      "urlToImage": "https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2023/11/1408/814/11.11.23_NFL-Top-Plays_TNF_16x9.jpg?ve=1&tl=1",
+      "publishedAt": "2023-11-17T00:15:42Z",
+      "content": "Week 11 of the NFL\r\n season kicks off with the Baltimore Ravens (7-3) playing host to the Cincinnati Bengals (5-4) at M&amp;T Bank Stadium on Thursday Night Football in a battle between two AFC North… [+921 chars]"
+    },
+    {
+      "source": { "id": "usa-today", "name": "USA Today" },
+      "author": "Chris Bumbaca, Nate Davis, Tyler Dragon, Cydney Henderson, Victoria Hernandez, Jim Reineking",
+      "title": "Ravens vs. Bengals Thursday Night Football: Baltimore rolls in key AFC North showdown",
+      "description": "The Ravens-Bengals matchup billed as the most exciting \"Thursday Night Football\" game of the season didn’t live up to expectations for many reasons.",
+      "url": "https://www.usatoday.com/story/sports/nfl/2023/11/16/bengals-ravens-thursday-night-football-live-updates/71598646007/",
+      "urlToImage": "https://www.usatoday.com/gcdn/authoring/authoring-images/2023/11/17/USAT/71615737007-usatsi-21912677.jpg?crop=8630,4854,x10,y625&width=3200&height=1800&format=pjpg&auto=webp",
+      "publishedAt": "2023-11-16T23:36:50+00:00",
+      "content": "BALTIMORE The matchup had been billed as the most exciting Thursday Night Football game of the season. The Baltimore Ravens34-20 victory over the Cincinnati Bengals didnt live up to expectations for … [+27410 chars]"
+    },
+    {
+      "source": { "id": "bbc-sport", "name": "BBC Sport" },
+      "author": null,
+      "title": "'Rolling round crying like babies is not football'",
+      "description": "Scotland midfielder Scott McTominay criticises Georgia after the sides' 2-2 Euro 2024 qualification draw, calling them \"a disgrace\".",
+      "url": "http://www.bbc.co.uk/sport/av/football/67446278",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/142E8/production/_131746628_p0gt5c8h.jpg",
+      "publishedAt": "2023-11-16T21:52:22.0249333Z",
+      "content": "'Race away, but don't crash' - new Brawn F1 doc. Video, 00:02:05'Race away, but don't crash' - new Brawn F1 doc"
+    },
+    {
+      "source": { "id": "talksport", "name": "TalkSport" },
+      "author": "Robert Calcutt",
+      "title": "Arsenal boss Mikel Arteta charged by FA following explosive rant after Newcastle defeat...",
+      "description": "The Football Association have charged Mikel Arteta over his rant at VAR following Arsenal’s 1-0 defeat at Newcastle. Anthony Gordon’s goal was controversially allowed to stand at St. Ja…",
+      "url": "https://talksport.com/football/1644407/fa-charge-mikel-arteta-rant-arsenal-newcastle/",
+      "urlToImage": "https://talksport.com/wp-content/uploads/sites/5/2023/11/mikel-arteta-head-coach-arsenal-856577784.jpg?strip=all&quality=100&w=1531&h=1021&crop=1",
+      "publishedAt": "2023-11-16T19:50:00Z",
+      "content": "The Football Association have charged Mikel Arteta over his rant at VAR following Arsenal's 1-0 defeat at Newcastle.\r\nAnthony Gordon's goal was controversially allowed to stand at St. James' Park to … [+2184 chars]"
+    },
+    {
+      "source": { "id": "bleacher-report", "name": "Bleacher Report" },
+      "author": "Gary Davenport",
+      "title": "B/R Fantasy Football's Game-by-Game Guide to Winning Week 11",
+      "description": "A game-by-game fantasy football guide to Week 11 with start/sit recommendations, sleepers, trade info and stats to know.",
+      "url": "https://bleacherreport.com/articles/10097464-br-fantasy-footballs-game-by-game-guide-to-winning-week-11",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1700107527/zebnb8b0zg0a8luvqjkp.jpg",
+      "publishedAt": "2023-11-16T12:00:00Z",
+      "content": "Devin SingletaryIan Johnson/Icon Sportswire via Getty Images\r\nKey Injuries\r\nThe Houston Texans went into Cincinnati and won last week without a pair of offensive starters, as running back Dameon Pier… [+2177 chars]"
+    },
+    {
+      "source": { "id": "talksport", "name": "TalkSport" },
+      "author": "Josh Fordham",
+      "title": "Glenn Hoddle responds to David Beckham family’s criticism in Netflix documentary: ‘I’ve got no probl...",
+      "description": "Glenn Hoddle says he has no problem with David Beckham following the fallout of his recent Netflix documentary series. Beckham delved into his life as a superstar footballer both on and off the pit…",
+      "url": "https://talksport.com/football/1643447/glenn-hoddle-david-beckham-netflix-documentary/",
+      "urlToImage": "https://talksport.com/wp-content/uploads/sites/5/2023/11/OQ-TALKSPORT-BECKHAM-HODDLE.jpg?strip=all&quality=100&w=1500&h=1000&crop=1",
+      "publishedAt": "2023-11-16T09:45:48Z",
+      "content": "Glenn Hoddle says he has no problem with David Beckham following the fallout of his recent Netflix documentary series.\r\nBeckham delved into his life as a superstar footballer both on and off the pitc… [+2926 chars]"
+    },
+    {
+      "source": { "id": "four-four-two", "name": "FourFourTwo" },
+      "author": "Ryan Dabbs",
+      "title": "The best-selling football shirts ahead of Black Friday: You won't believe which Manchester United star ranks among the most popular players",
+      "description": "The best-selling football shirts in world football have been revealed, and there are some surprise inclusions and shocking omissions from the list",
+      "url": "https://www.fourfourtwo.com/news/the-best-selling-football-shirts-you-wont-believe-which-manchester-united-star-ranks-among-the-most-popular-players",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/pqnxrmgSngywLsJsWBrQy4-1200-80.jpg",
+      "publishedAt": "2023-11-14T15:55:23Z",
+      "content": "Personalised football shirts have become increasingly common in recent years, with supporters desperate to get the names of their beloved heroes on the back of their shirts. \r\nIn the last month, thou… [+758 chars]"
+    },
+    {
+      "source": { "id": "espn-cric-info", "name": "ESPN Cric Info" },
+      "author": null,
+      "title": "Five famous people (and one cat) you didn't know have ESPNcricinfo profiles | ESPNcricinfo.com",
+      "description": "Why do a footballer, a Nobel laureate and a prime minister (no, not Imran Khan) find themselves in the ESPNcricinfo player database? | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/29102695/five-famous-people-one-cat-know-espncricinfo-profiles",
+      "urlToImage": "https://a.espncdn.com/i/cricket/cricinfo/1221668_1296x1296.gif",
+      "publishedAt": "2020-04-27T07:20:43Z",
+      "content": "Why do a cat, a footballer, a Nobel laureate and a prime minister find themselves in the ESPNcricinfo database? Here are six player profiles you wouldn't have expected we had.\r\nPeter the catThe only … [+5504 chars]"
+    }
+  ]
+}
