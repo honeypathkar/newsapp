@@ -16,7 +16,7 @@ export default function App() {
   return (
     <div>
       <Router>
-        <Navbar/>
+        <Navbar />
         <LoadingBar color="#f11946" progress={progress} height={3} />
         <Routes>
           <Route
