@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Navbar from "./comonents/Navbar";
-import News from "./comonents/News";
+import Navbar from "./components/Navbar";
+import News from "./components/News";
 import LoadingBar from "react-top-loading-bar";
 import {
   BrowserRouter as Router,
@@ -8,7 +8,7 @@ import {
   Route,
   //Link
 } from "react-router-dom";
-import About from "./comonents/About";
+import About from "./components/About";
 export default function App() {
   let pagesize = 9;
   let apiKey = process.env.REACT_APP_NEWS_API;

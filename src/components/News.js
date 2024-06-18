@@ -45,11 +45,22 @@ export default function News(props) {
     <div>
       <div className="container mt-32 mb-10">
         <h2
-          className="my-5 text-center text-3xl"
+          className="my-3 text-center text-3xl"
           style={{ fontFamily: "'Glass Antiqua', cursive", fontWeight: "bold" }}
         >
           NewsFrog - Top Headlines
         </h2>
+        <form className="d-flex my-4" role="search">
+          <input
+            className="form-control"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button className="btn btn-outline-dark" type="submit">
+            Search
+          </button>
+        </form>
         {loading && <Spinner />}
         <div className="row">
           {!loading &&
