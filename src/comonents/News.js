@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
 import PropTypes from "prop-types";
+import ReactPaginate from "react-paginate";
+import "../App.css";
 
 export default function News(props) {
   const [articles, setArticles] = useState([]);
@@ -32,26 +34,21 @@ export default function News(props) {
     document.title = `NewsForg- ${capitalize(props.category)}`;
     updateNews();
     // eslint-disable-next-line
-  }, []);
+  }, [page]);
 
-  const handlePrevPage = async () => {
-    setPage(page - 1);
-    updateNews();
-  };
-
-  const handleNextPage = async () => {
-    setPage(page + 1);
-    updateNews();
+  const handlePageClick = (event) => {
+    const selectedPage = event.selected + 1; // react-paginate pages are 0-indexed
+    setPage(selectedPage);
   };
 
   return (
     <div>
-      <div className="container my-3">
+      <div className="container mt-32 mb-10">
         <h2
-          className="my-5 text-center"
+          className="my-5 text-center text-3xl"
           style={{ fontFamily: "'Glass Antiqua', cursive", fontWeight: "bold" }}
         >
-          NewsFrog - Top HeadLines
+          NewsFrog - Top Headlines
         </h2>
         {loading && <Spinner />}
         <div className="row">
@@ -66,7 +63,11 @@ export default function News(props) {
                         ? element.description.slice(0, 100)
                         : ""
                     }
-                    imgUrl={element.urlToImage}
+                    imgUrl={
+                      element.urlToImage === null
+                        ? "https://user-images.githubusercontent.com/10515204/56117400-9a911800-5f85-11e9-878b-3f998609a6c8.jpg"
+                        : element.urlToImage
+                    }
                     newsUrl={element.url}
                     author={element.author}
                     date={element.publishedAt}
@@ -77,27 +78,32 @@ export default function News(props) {
             })}
         </div>
       </div>
-      <div className="container d-flex justify-content-between">
-        <button
-          type="button"
-          className="btn btn-dark"
-          disabled={page <= 1}
-          onClick={handlePrevPage}
-        >
-          &larr; Previous
-        </button>
-        <button
-          type="button"
-          className="btn btn-dark"
-          disabled={page + 1 > Math.ceil(totalResults / props.pagesize)}
-          onClick={handleNextPage}
-        >
-          Next &rarr;
-        </button>
+      <div className="container flex justify-center mb-10">
+        <ReactPaginate
+          previousLabel={"← Previous"}
+          nextLabel={"Next →"}
+          breakLabel={"..."}
+          breakClassName={"break-me"}
+          pageCount={Math.ceil(totalResults / props.pagesize)}
+          marginPagesDisplayed={2}
+          pageRangeDisplayed={3}
+          onPageChange={handlePageClick}
+          containerClassName={"pagination"}
+          subContainerClassName={"pages pagination"}
+          activeClassName={"active"}
+          pageClassName={"page-item"}
+          pageLinkClassName={"page-link"}
+          previousClassName={"page-item"}
+          previousLinkClassName={"page-link"}
+          nextClassName={"page-item"}
+          nextLinkClassName={"page-link"}
+          breakLinkClassName={"page-link"}
+        />
       </div>
     </div>
   );
 }
+
 News.defaultProps = {
   country: "in",
   pagesize: 5,
@@ -108,4 +114,6 @@ News.propTypes = {
   country: PropTypes.string,
   pagesize: PropTypes.number,
   category: PropTypes.string,
+  apiKey: PropTypes.string.isRequired,
+  setProgress: PropTypes.func.isRequired,
 };
