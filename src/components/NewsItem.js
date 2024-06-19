@@ -18,14 +18,14 @@ export default function NewsItem(props) {
           style={{ maxHeight: "230px" }}
         />
         <div className="card-body">
-          <h5 className="card-title">{title}...</h5>
-          <p className="card-text">
+          <h5 className="card-title font-bold">{title}...</h5>
+          <p className="card-text mb-2">
             {!description
               ? "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit enim recusandae repellendus deserunt"
               : description}
             ....
           </p>
-          <p className="card-text">
+          <p className="card-text mb-3">
             {" "}
             <small className="text-muted">
               By {!author ? "Unknown" : author} on{" "}
@@ -36,7 +36,7 @@ export default function NewsItem(props) {
             href={newsUrl}
             target="_blank"
             rel="noreferrer"
-            className="btn btn-sm btn-dark"
+            className="btn btn-sm btn-outline-dark"
           >
             Read More
           </a>

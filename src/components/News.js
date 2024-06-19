@@ -16,51 +16,53 @@ export default function News(props) {
     return lower.charAt(0).toUpperCase() + lower.slice(1);
   };
 
-  const updateNews = async () => {
+  const fetchNews = async (url) => {
     props.setProgress(10);
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pagesize=${props.pagesize}`;
     setLoading(true);
-    let data = await fetch(url);
-    props.setProgress(30);
-    let parsedData = await data.json();
-    props.setProgress(70);
-    setArticles(parsedData.articles);
-    setLoading(false);
-    setTotalResults(parsedData.totalResults);
-    props.setProgress(100);
+    try {
+      let data = await fetch(url);
+      if (!data.ok) {
+        throw new Error(`HTTP error! Status: ${data.status}`);
+      }
+      props.setProgress(30);
+      let parsedData = await data.json();
+      props.setProgress(70);
+      setArticles(parsedData.articles);
+      setLoading(false);
+      setTotalResults(parsedData.totalResults);
+      props.setProgress(100);
+    } catch (error) {
+      console.error("Error fetching news:", error);
+      setLoading(false);
+      // Handle error state or display a message to the user
+    }
+  };
+
+  const updateNews = async (page) => {
+    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pagesize}`;
+    await fetchNews(url);
   };
 
   useEffect(() => {
-    document.title = `NewsForg- ${capitalize(props.category)}`;
-    updateNews();
+    document.title = `NewsForg - ${capitalize(props.category)}`;
+    updateNews(page);
     // eslint-disable-next-line
   }, [page]);
 
   const handlePageClick = (event) => {
-    const selectedPage = event.selected + 1; // react-paginate pages are 0-indexed
+    const selectedPage = event.selected + 1;
     setPage(selectedPage);
   };
 
   return (
     <div>
-      <div className="container mt-32 mb-10">
+      <div className="container mt-32 mb-16">
         <h2
           className="my-3 text-center text-3xl"
           style={{ fontFamily: "'Glass Antiqua', cursive", fontWeight: "bold" }}
         >
           NewsFrog - Top Headlines
         </h2>
-        <form className="d-flex my-4" role="search">
-          <input
-            className="form-control"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button className="btn btn-outline-dark" type="submit">
-            Search
-          </button>
-        </form>
         {loading && <Spinner />}
         <div className="row">
           {!loading &&
