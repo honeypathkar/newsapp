@@ -22,9 +22,9 @@ export default function Example() {
 
   return (
     <div className="bg-white">
-      <header className="fixed inset-x-0 top-0 z-50 bg-white">
+      <header className="fixed inset-x-0 top-0 z-50 bg-gray-200">
         <nav
-          className="flex items-center justify-between p-6 lg:px-8 bg-white"
+          className="flex items-center justify-between p-6 lg:px-8 bg-gray-200"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">

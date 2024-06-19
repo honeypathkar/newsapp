@@ -11,7 +11,7 @@ import {
 import About from "./components/About";
 export default function App() {
   let pagesize = 9;
-  let apiKey = process.env.REACT_APP_NEWS_API;
+  let apiKey = process.env.REACT_APP_NEWS_API || "f5811c93a9c14ef9a32aa7e827500411"; //enter api key if not work
   const [progress, setProgress] = useState(0);
   return (
     <div>

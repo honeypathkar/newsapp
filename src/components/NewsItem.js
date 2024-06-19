@@ -36,9 +36,9 @@ export default function NewsItem(props) {
             href={newsUrl}
             target="_blank"
             rel="noreferrer"
-            className="btn btn-sm btn-outline-dark"
+            className="btn btn-sm btn-outline-dark items-center"
           >
-            Read More
+            Read More &rarr;
           </a>
         </div>
       </div>
