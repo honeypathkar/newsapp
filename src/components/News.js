@@ -11,11 +11,13 @@ export default function News(props) {
   const [page, setPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
 
+  //Capatalize the word
   const capitalize = (word) => {
     const lower = word.toLowerCase();
     return lower.charAt(0).toUpperCase() + lower.slice(1);
   };
 
+  //Fetching new from api
   const fetchNews = async (url) => {
     props.setProgress(10);
     setLoading(true);
@@ -43,12 +45,14 @@ export default function News(props) {
     await fetchNews(url);
   };
 
+  //Calling updatenews function and changing title on category click
   useEffect(() => {
     document.title = `NewsForg - ${capitalize(props.category)}`;
     updateNews(page);
     // eslint-disable-next-line
   }, [page]);
 
+  //Updating page by 1
   const handlePageClick = (event) => {
     const selectedPage = event.selected + 1;
     setPage(selectedPage);
@@ -76,6 +80,7 @@ export default function News(props) {
                         ? element.description.slice(0, 100)
                         : ""
                     }
+                    // Default image url if image not available
                     imgUrl={
                       element.urlToImage === null
                         ? "https://user-images.githubusercontent.com/10515204/56117400-9a911800-5f85-11e9-878b-3f998609a6c8.jpg"
@@ -92,6 +97,7 @@ export default function News(props) {
         </div>
       </div>
       <div className="container flex justify-center mb-10">
+        {/* React paginate for pagination */}
         <ReactPaginate
           previousLabel={"← Previous"}
           nextLabel={"Next →"}
@@ -117,12 +123,14 @@ export default function News(props) {
   );
 }
 
+//Default props
 News.defaultProps = {
   country: "in",
   pagesize: 5,
   category: "general",
 };
 
+//Property types
 News.propTypes = {
   country: PropTypes.string,
   pagesize: PropTypes.number,

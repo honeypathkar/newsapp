@@ -20,6 +20,7 @@ export default function NewsItem(props) {
         <div className="card-body">
           <h5 className="card-title font-bold">{title}...</h5>
           <p className="card-text mb-2">
+            {/* Default description if description is not available */}
             {!description
               ? "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit enim recusandae repellendus deserunt"
               : description}

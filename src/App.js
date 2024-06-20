@@ -10,8 +10,8 @@ import {
 } from "react-router-dom";
 import About from "./components/About";
 export default function App() {
-  let pagesize = 9;
-  let apiKey = process.env.REACT_APP_NEWS_API || "f5811c93a9c14ef9a32aa7e827500411"; //enter api key if not work
+  let pagesize = 9; //article size per page
+  let apiKey = process.env.REACT_APP_NEWS_API || "f5811c93a9c14ef9a32aa7e827500411"; //enter your api key if it did not work
   const [progress, setProgress] = useState(0);
   return (
     <div>
